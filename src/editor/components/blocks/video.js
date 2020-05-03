@@ -43,6 +43,8 @@ export default class VideoBlock extends React.Component {
       method: 'get',
       url: `${ this.dataForUpdate().endpoint }${ this.dataForUpdate().provisory_text }&scheme=https`
     }).then(result => {
+      const newFrame = result.data.html.replace("youtube", "youtube-nocookie")
+      result.data.html = newFrame
       return this.setState({ embed_data: result.data } //JSON.parse(data.responseText)
       , this.updateData)
     }).catch(error => {

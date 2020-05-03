@@ -8373,6 +8373,11 @@ nth-check@^1.0.1:
   dependencies:
     boolbase "~1.0.0"
 
+null@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/null/-/null-2.0.0.tgz#5a80d2b28f9a77bdd9aa63c1d1958d695b3295e8"
+  integrity sha512-CVSXPeB7Af0Sku7w8N8EKkgcwvQ6wGNfs6bly419A/q6dpIwzaHIk+65+La2g80ml21uxVXQo8xReTMI2WEYbA==
+
 num2fraction@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
