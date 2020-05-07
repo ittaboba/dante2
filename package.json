@@ -6,7 +6,10 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michelson/dante2.git"
+    "url": "https://github.com/ittaboba/dante2.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@ittaboba"
   },
   "bugs": {
     "url": "https://github.com/michelson/dante2/issues"
@@ -95,7 +98,7 @@
     "docz:dev": "docz dev",
     "start": "yarn docz dev",
     "predeploy": "PUBLIC_URL=https://michelson.github.io/dante2 yarn docz build",
-    "deploy": "node build.js",
+    "deploy": "npm publish",
     "build": "NODE_ENV=production rollup -c",
     "dev": "rollup -c -w",
     "package": "NODE_ENV=production ./node_modules/.bin/babel-node tools/build-cli.js; yarn build",
